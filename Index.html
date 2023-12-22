@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="helloContainer">
+        <p id="helloText">Hello 😊</p>
+    </div>
+    <div id="date-container">
+        <p id="shortDate"></p>
+    </div>
+
+    <div id="input-container">
+        <div>
+            <label for="textInput">Enter text:</label>
+            <textarea id="textInput" placeholder="Type here..."></textarea>
+            <!-- Кнопка Translate видалена -->
+            <!-- <button id="translateButton">Translate</button> -->
+            <div id="translationContainer"></div>
+        </div>
+        <div>
+            <label for="drawingCanvas">Drawing:</label>
+            <canvas id="drawingCanvas" width="400" height="200"></canvas>
+            <div>
+                <button id="clearButton">Clear</button>
+                <input type="color" id="colorPicker" value="#e74c3c" />
+            </div>
+        </div>
+        <div>
+            <button id="timerButton" class="timer-button">Start Timer</button>
+            <div id="timerDisplay" class="timer-display"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
